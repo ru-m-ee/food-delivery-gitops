@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: food-delivery
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/ru-m-ee/food-delivery-gitops.git
+    targetRevision: HEAD
+    path: Food-Delivery/k8s
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
