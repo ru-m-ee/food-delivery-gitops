@@ -23,7 +23,7 @@ spec:
         - name: SALT
           value: "10"
         - name: MONGO_URL
-          value: "your_mongodb_url"
+          value: "mongodb+srv://admin:admin@cluster0.pk8uire.mongodb.net/food-delivery"
         - name: STRIPE_SECRET_KEY
           value: "your_stripe_key"
 ---
