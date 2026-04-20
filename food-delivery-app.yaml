@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/ru-m-ee/food-delivery-gitops.git
     targetRevision: HEAD
-    path: Food-Delivery/k8s
+    path: k8s
   destination:
     server: https://kubernetes.default.svc
     namespace: default
